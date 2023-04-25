@@ -226,3 +226,36 @@ A'
 ````
 A > 3
 ````
+La operación anterior retorna una matriz con las mismas dimensiones que la original 
+pero en cada posicion retorna un cero o un 1, en correspondencia de si cumple o no la condicion.
+
+Por otra parte la operacion
+````
+find(A > 3)
+````
+Retorna las posiciones en las que se cumple la condicion
+
+#### Sum
+
+Para sumar todos los elementos de cada columna de una matriz:
+
+````
+sum(A)
+````
+
+#### Maximo por fila o columna
+````
+max(A,[],1)
+````
+````
+max(A,[],2)
+````
+
+Si queremos obtener el maximo de toda la matriz:
+````
+max(max(A))
+````
+o
+````
+max(A(:))
+````
