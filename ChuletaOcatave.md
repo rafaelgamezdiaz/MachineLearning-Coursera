@@ -186,3 +186,43 @@ Para agregar una columna al final de una matriz
 ````
 A = [A, [1;2;3;4;5]]
 ````
+
+## Operaciones con matrices
+
+Si
+````
+A = [1 2; 3 4; 5 6], 
+B = [2 2; 2 2]   
+C = [5 3; 3 1; 4 4]
+````
+
+#### Producto
+
+````
+A*B
+````
+
+#### Operaciones elemento a elemento
+
+````
+A .* B
+````
+
+````
+A ./ B
+````
+
+#### Transpuesta de una matriz
+
+````
+A'
+````
+
+#### Obtener maximo y posicion en un array vector
+[val, ind] = max(D)
+
+# Obtener true o false en dependencia de condicion
+
+````
+A > 3
+````
