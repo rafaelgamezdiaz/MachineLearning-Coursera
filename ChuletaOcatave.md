@@ -259,3 +259,54 @@ o
 ````
 max(A(:))
 ````
+
+#### Obtener la inversa de una matriz
+
+````
+pinv(A)
+````
+
+### Graficando en Octave
+
+Creamos un rango de valores de absisas
+````
+t=[0:0.01:0.9];
+y1=sin(2*pi*4*t);
+plot(t,y1);
+````
+Esto nos muestra el gráfico de la función. Si ahora creamos 
+````
+y2=cos(2*pi*4*t);
+plot(t,y2);
+````
+El primer grafico será reemplazado. Para poder ver ambos, después de graficar el primero debemos ejecutar el comando "hold on"
+````
+plot(t,y1);
+hold on;
+plot(t,y2);
+````
+Para colocar labels en el grafico
+````
+xlabel('time');
+ylabel('value');
+````
+Para colocar leyenda
+````
+legend('sin','cos');
+````
+Para colocar un título:
+````
+title('my plot');
+````
+#### Para exportar el grafico en un PNG
+
+Nos movemos a una carpeta que queramos
+````
+cd 'C:\Developer\MachineLearning\Coursera\plots';
+````
+
+Y exportamos el grafico.
+````
+print -dpng 'myplot.png'
+````
+
