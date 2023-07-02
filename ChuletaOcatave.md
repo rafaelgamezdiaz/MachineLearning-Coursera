@@ -310,3 +310,51 @@ Y exportamos el grafico.
 print -dpng 'myplot.png'
 ````
 
+Para cerrar la ventana del gráfico:
+````
+close
+````
+
+#### Para tener multiples ventanas de gráficos
+````
+figure(1);plot(t,y1);
+````
+````
+figure(2);plot(t,y2);
+````
+
+#### Para tener multiples graficos en una misma ventana
+````
+subplot(1,2,1);
+````
+Con el comando anterior establecemos una ventana en la que podemos ubicar dos gráficos, uno al lado del otro
+ya que tenemos 1 fila y 2 columnas. El ultimo número indica a que elemento queremos acceder
+
+#### Para vaciar el contenido de la ventana de gráficos
+````
+clf
+````
+
+#### Representar visualmente una matriz
+````
+A=magic(9);
+imagesc(A), colorbar, colormap gray;
+````
+
+### Loops
+````
+V=zeros(10,1);
+
+for i=1:10
+    V(i)=2^i;
+end;
+V
+````
+
+### Funciones
+Para definir una funcion lo hacemos dentro de un archivo de texto externo, en el mismo podemos colocar por 
+ejemplo:
+````
+function y = squareThisNumber(x);
+y = X^2;
+````
